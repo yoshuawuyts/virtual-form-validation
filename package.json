@@ -1,0 +1,37 @@
+{
+  "name": "virtual-form-validation",
+  "version": "1.0.0",
+  "description": "Validate a virtual-form using JSON Schema",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/virtual-form-validation",
+  "keywords": [
+    "json-schema",
+    "form",
+    "virtual-dom",
+    "mercury",
+    "validate",
+    "async",
+    "sync",
+    "hook"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "validate-json-schema-form": "^1.0.2"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.5.0",
+    "istanbul": "^0.3.19",
+    "standard": "^5.1.1",
+    "tape": "^4.2.0"
+  },
+  "files": [
+    "LICENSE",
+    "index.js",
+    "README.md"
+  ]
+}
